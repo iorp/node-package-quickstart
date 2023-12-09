@@ -1,0 +1,19 @@
+{ 
+  "name": "my-node-module",
+  "version": "1.0.0",
+  "description": "A simple npm installable Node module package",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/test.js",
+    "build": "babel src --out-dir lib",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "mocha": "^10.0.1"
+  }
+}
